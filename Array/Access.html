@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Accessing</title>
+    <script>
+    // Array Accessing is a provess to access specific element in Array.
+    let data = [2,4,6,8,10,12,14,16];
+    function get(){
+    // Here I used direct mapping technique and element works same as index in array Data.
+        let element = document.getElementById('text').value;
+        if(element < data.length && typeof(parseInt(element) == "number")){
+            alert(data[element]);
+        }
+        else{
+            alert("Index Not found!");
+        }
+    }
+    </script>
+</head>
+<body>
+    <input type = "text" id = "text" />
+    <button type ="button" onclick="get()">Get Value </button>
+</body>
+</html>
