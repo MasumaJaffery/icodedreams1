@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array Traversing</title>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Array Traversing is a process to iterate or traverse each element in Array.
-            let data = [2, 4, 6, 8, 10, 12, 14, 16];
-            for (let i = 0; i < data.length; i++) {
-                let ul = document.getElementById('list');
-                let li = document.createElement('li');
-                li.innerHTML = data[i];
-                ul.appendChild(li);
-            }
-        });
-        </script>
+    // Array Traversing is a process to iterate or traverse each element in Array.
+    document.addEventListener('DOMContentLoaded',function(){
+    let data = [2,4,6,8,10,12,14,16];
+    for(let i = 0; i < data.length; i++){
+    let ul = document.getElementById('list');
+    let li = document.createElement('li');
+    li.innerText = data[i];
+    ul.appendChild(li);
+      }
+    })
+    </script>
 </head>
 <body>
     <ul id="list"></ul>
